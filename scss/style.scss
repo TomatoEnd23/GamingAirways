@@ -11,27 +11,26 @@ $breakpoint: (
 }
 
 
-
-
 .contents {
     background-color: #abe2ff;
     width: 100%;
+    height: auto;
     position: relative;
-    background-image: url(../images/cloud1.svg) , url(../images/cloud2.svg) , url(../images/cloud3.svg) , url(../images/cloud4.svg) , url(../images/cloud5.svg) , url(../images/cloud1.svg) ;
+    background-image: url(../images/cloud1.svg) , url(../images/cloud2.svg) , url(../images/cloud3.svg) , url(../images/cloud4.svg) , url(../images/cloud3.svg) , url(../images/cloud4.svg) ,url(../images/cloud5.svg) , url(../images/cloud1.svg) ;
     background-size: 300px;
     background-position: 20% 35% , 80% 50% , 20% 60% ,80% 65% , 90% 95% , 10% 85%;
     background-repeat: no-repeat;
-
+    
     @include mq(tab) {
         width: 100%;
         background-size: 250px;
-        background-position: 15% 40% , 80% 54% , 20% 60% ,80% 65% , 97% 95% , 10% 85%;
+        background-position: 15% 40% , 80% 54% , 20% 60% ,70% 55% ,80% 65% , 97% 95% , 10% 85%;
     }
 
     @include mq(sp) {
       max-width: 100%;
       background-size: 150px;
-      background-position: 15% 40% , 80% 54% , 20% 60% ,80% 65% , 97% 95% , 10% 85%;
+      background-position: 10% 27% , 80% 40% , 20% 50% ,80% 40% ,90% 22%, 97% 95% , 90% 75% , 10% 67%;
   }
 }
 
@@ -247,7 +246,6 @@ $breakpoint: (
 
 // topに戻るボタン
 #back {
-  opacity: 0;
     width: 30px;
     height: 30px;
     background: #E65319;
@@ -313,6 +311,7 @@ header h1 a img {
 /* top-main */
 
 .top-main {
+  
     height: 1080px;
     width: 900px;
     background-image: url(../images/runway.svg);
@@ -523,9 +522,11 @@ height: auto;
 /* main */
 #main {
   opacity: 0;
-
+  margin-bottom: 200px;
+  
   @include mq(sp) {
     height: 700px;
+    
 }
 }
 
@@ -540,6 +541,7 @@ main .main-title {
   }
 
   @include mq(sp) {
+    
     margin: 0 auto;
     padding-top: 150px;
     justify-content: space-around;
@@ -557,7 +559,7 @@ main .main-title h2 img {
   }
 
   @include mq(sp) {
-    width: 150px;
+    width: 240px;
     margin: 0;
 }
 }
@@ -570,6 +572,11 @@ main .main-title p img {
   }
 }
 
+main .main-section h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 main .main-section h3 img {
     width: 300px;
 
@@ -579,8 +586,15 @@ main .main-section h3 img {
       }
 
       @include mq(sp) {
-        width: 150px;
+        width: 160px;
+        
     }
+}
+
+
+
+main .main-section h4 {
+  text-align: center;
 }
 
 main .main-section h4 img {
@@ -592,7 +606,8 @@ main .main-section h4 img {
   }
 
   @include mq(sp) {
-    width: 150px;
+    width: 200px;
+    
 }
 }
 
@@ -600,7 +615,7 @@ main .main-section p img {
     width: 330px;
 
     @include mq(sp) {
-      width: 150px;
+      width: 200px;
   }
 }
 
@@ -615,9 +630,11 @@ main .main-section p img {
   }
 
   @include mq(sp) {
-    width: 120px;
+    width: 300px;
     margin: 0 auto;
     padding-top: 100px;
+    display: block;
+    justify-content: center;
 }
 }
 
@@ -625,8 +642,6 @@ main .main-section p img {
   margin-top: 100px;
   display: flex;
   justify-content: flex-end;
-
-
 }
 
 #main-text2 {
@@ -641,13 +656,33 @@ main .main-section p img {
   justify-content: flex-end;
 }
 
+// horizontal
+.area{
+  overflow: hidden;
+  
+}
+
+.wrap{
+  display: flex;
+  width: 100%;
+}
+.item{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+ 
+  @include mq(sp) {
+    height: 80vh;
+    margin-top: 4%;
+}
+}
 
 /* date */
 .date {
   width: 900px;
   margin: 300px auto;
   position: relative;
-
+  
   @include mq(tab) {
     width: 700px;
     margin: 200px auto ;
@@ -655,6 +690,7 @@ main .main-section p img {
 
   @include mq(sp) {
     width: 300px;
+    padding-top: 100px;
 }
 }
 
@@ -705,7 +741,7 @@ main .main-section p img {
 
   @include mq(sp) {
     width: 130px;
-    top: -10%;
+    top: 15%;
     left: 68%;
 }
 }
@@ -722,9 +758,9 @@ main .main-section p img {
   }
 
   @include mq(sp) {
-    width: 150px;
-    top: 83%;
-    left: -18%;
+    width: 130px;
+    top: 87%;
+    left: -13%;
 }
 }
 

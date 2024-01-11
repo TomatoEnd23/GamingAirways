@@ -6,7 +6,7 @@
   position: relative;
   background-image: url(../images/cloud1.svg), url(../images/cloud2.svg), url(../images/cloud3.svg), url(../images/cloud4.svg), url(../images/cloud3.svg), url(../images/cloud4.svg), url(../images/cloud5.svg), url(../images/cloud1.svg);
   background-size: 300px;
-  background-position: 20% 35%, 80% 50%, 20% 60%, 80% 65%, 90% 95%, 10% 85%;
+  background-position: 20% 35%, 22% 17%, 80% 23%, 20% 26%, 80% 29%, 10% 93%, 85% 98%;
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 1279px) {
@@ -340,6 +340,193 @@ header h1 a img {
   width: 85%;
   height: auto;
 }
+#game-icon1 {
+  width: 60px;
+  position: absolute;
+  top: 24%;
+  left: 80%;
+}
+#game-icon1 img:hover {
+  transform: translateY(-5px);
+}
+@media screen and (max-width: 767px) {
+  #game-icon1 {
+    width: 40px;
+    top: 28%;
+  }
+}
+
+#game-icon2 {
+  width: 80px;
+  position: absolute;
+  top: 24%;
+  left: 14%;
+}
+@media screen and (max-width: 767px) {
+  #game-icon2 {
+    width: 50px;
+    top: 28%;
+  }
+}
+
+#game-icon3 {
+  width: 100px;
+  position: absolute;
+  top: 64%;
+  left: 75%;
+}
+@media screen and (max-width: 767px) {
+  #game-icon3 {
+    width: 50px;
+    top: 80%;
+  }
+}
+@media screen and (max-width: 1279px) {
+  #game-icon3 {
+    top: 76%;
+  }
+}
+
+#game-icon4 {
+  width: 130px;
+  position: absolute;
+  top: 68%;
+  left: 12%;
+}
+@media screen and (max-width: 767px) {
+  #game-icon4 {
+    width: 80px;
+    top: 82%;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 1279px) {
+  #game-icon4 {
+    top: 79%;
+  }
+}
+
+#game-icon5 {
+  width: 130px;
+  position: absolute;
+  top: 25%;
+  left: 70%;
+}
+@media screen and (max-width: 1279px) {
+  #game-icon5 {
+    top: 27%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #game-icon5 {
+    width: 50px;
+    top: 17%;
+  }
+}
+
+#game-icon6 {
+  width: 100px;
+  top: 28%;
+  left: 20%;
+}
+#game-icon7 {
+  width: 100px;
+}
+.coin {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  position: absolute;
+  top: 28%;
+  left: 27%;
+}
+@media screen and (max-width: 1279px) {
+  .coin {
+    top: 29%;
+    left: 25%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .coin {
+    width: 40px;
+    top: 19.5%;
+    left: 25%;
+  }
+}
+
+#game-icon8 {
+  width: 100px;
+  position: absolute;
+  top: 30%;
+  left: 70%;
+}
+@media screen and (max-width: 1279px) {
+  #game-icon8 {
+    top: 31.5%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #game-icon8 {
+    width: 40px;
+    top: 22%;
+    left: 70%;
+  }
+}
+
+#game-icon9 {
+  width: 130px;
+  position: absolute;
+  top: 24%;
+  left: -8%;
+}
+@media screen and (max-width: 1279px) {
+  #game-icon9 {
+    left: -6%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #game-icon9 {
+    width: 80px;
+    top: 25%;
+  }
+}
+
+#game-icon10 {
+  width: 200px;
+  position: absolute;
+  top: 90%;
+  left: 85%;
+}
+@media screen and (max-width: 1279px) {
+  #game-icon10 {
+    left: 74%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #game-icon10 {
+    width: 100px;
+    top: 95%;
+    left: 75%;
+  }
+}
+
+.cv_btn img {
+  animation: anime1 0.5s ease 0s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes anime1 {
+  from {
+    transform: scale(0.9, 0.9);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+img:not(#not):hover {
+  transform: translateY(-5px);
+}
+
 #play-button {
   width: 280px;
   position: absolute;
@@ -671,13 +858,13 @@ main .main-section p img {
 
 .wrap {
   display: flex;
-  width: 100%;
 }
 
 .item {
   height: 100vh;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .item {
@@ -748,6 +935,16 @@ main .main-section p img {
   position: absolute;
   top: 0;
   left: 700px;
+  animation: anime1 0.5s ease 0s infinite alternate;
+  transform-origin: center;
+}
+@keyframes anime1 {
+  from {
+    transform: scale(0.9, 0.9);
+  }
+  to {
+    transform: scale(1, 1);
+  }
 }
 @media screen and (max-width: 1279px) {
   #hanabi1 {
@@ -768,6 +965,16 @@ main .main-section p img {
   position: absolute;
   top: 200px;
   left: -100px;
+  animation: anime1 0.5s ease 0s infinite alternate;
+  transform-origin: center;
+}
+@keyframes anime1 {
+  from {
+    transform: scale(0.9, 0.9);
+  }
+  to {
+    transform: scale(1, 1);
+  }
 }
 @media screen and (max-width: 1279px) {
   #hanabi2 {

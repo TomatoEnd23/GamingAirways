@@ -10,6 +10,9 @@ $breakpoint: (
   }
 }
 
+// * {
+// 	outline: 1px solid magenta;
+// }
 
 .contents {
     background-color: #abe2ff;
@@ -37,7 +40,7 @@ $breakpoint: (
 /*紙吹雪のスタイル*/
 .confetti {
     position: absolute;
-    width: 100%;
+    max-width: 100vw;
     height: 100%;
   }
   
@@ -1030,7 +1033,9 @@ z-index: 50;
   border: 2px solid #000;
 
   @include mq(sp) {
-    width: 300px;
+    width: 296px;
+    margin: 20px 0;
+    padding: 0;
 }
 }
 
@@ -1041,7 +1046,8 @@ z-index: 50;
   border: 2px solid #000;
 
   @include mq(sp) {
-    width: 300px;
+    width: 294px;
+
 }
 }
 
@@ -1124,7 +1130,8 @@ footer .footer-items {
 
   @include mq(sp) {
     display: block;
-    width: 300px;
+    width: 290px;
+    margin: 0 auto;
 }
 }
 

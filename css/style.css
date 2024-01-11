@@ -27,7 +27,7 @@
 /*紙吹雪のスタイル*/
 .confetti {
   position: absolute;
-  width: 100%;
+  max-width: 100vw;
   height: 100%;
 }
 
@@ -1031,7 +1031,9 @@ main .main-section p img {
 }
 @media screen and (max-width: 767px) {
   .contact input {
-    width: 300px;
+    width: 296px;
+    margin: 20px 0;
+    padding: 0;
   }
 }
 
@@ -1043,7 +1045,7 @@ main .main-section p img {
 }
 @media screen and (max-width: 767px) {
   .contact textarea {
-    width: 300px;
+    width: 294px;
   }
 }
 
@@ -1132,7 +1134,8 @@ footer .footer-items {
 @media screen and (max-width: 767px) {
   footer .footer-items {
     display: block;
-    width: 300px;
+    width: 290px;
+    margin: 0 auto;
   }
 }
 

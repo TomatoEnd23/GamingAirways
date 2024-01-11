@@ -18,7 +18,7 @@ $breakpoint: (
     position: relative;
     background-image: url(../images/cloud1.svg) , url(../images/cloud2.svg) , url(../images/cloud3.svg) , url(../images/cloud4.svg) , url(../images/cloud3.svg) , url(../images/cloud4.svg) ,url(../images/cloud5.svg) , url(../images/cloud1.svg) ;
     background-size: 300px;
-    background-position: 20% 35% , 80% 50% , 20% 60% ,80% 65% , 90% 95% , 10% 85%;
+    background-position: 20% 35% , 22% 17% , 80% 23% ,20% 26% , 80% 29% , 10% 93% , 85% 98%;
     background-repeat: no-repeat;
     
     @include mq(tab) {
@@ -359,6 +359,204 @@ height: auto;
 }
 }
 
+//イラスト共通
+#game-icon1 {
+  width: 60px;
+  position: absolute;
+  top: 24%;
+  left: 80%;
+
+  img:hover {
+    transform: translateY(-5px);
+  }
+
+  @include mq(tab) {
+    
+}
+
+  @include mq(sp) {
+    width: 40px;
+    top: 28%;
+    
+}
+}
+
+#game-icon2 {
+  width: 80px;
+  position: absolute;
+  top: 24%;
+  left: 14%;
+
+  @include mq(sp) {
+    width: 50px;
+    top: 28%;
+}
+}
+
+#game-icon3 {
+  width: 100px;
+  position: absolute;
+  top: 64%;
+  left: 75%;
+
+  @include mq(sp) {
+    width: 50px;
+    top: 80%;
+}
+
+@include mq(tab) {
+  top: 76%;
+}
+
+}
+
+#game-icon4 {
+  width: 130px;
+  position: absolute;
+  top: 68%;
+  left: 12%;
+
+  @include mq(sp) {
+    width: 80px;
+    top: 82%;
+    left: 5%;
+}
+
+@include mq(tab) {
+  top: 79%;
+}
+}
+
+#game-icon5 {
+  width: 130px;
+  position: absolute;
+  top: 25%;
+  left: 70%;
+
+  @include mq(tab) {
+    top: 27%;
+  }
+
+  @include mq(sp) {
+    width: 50px;
+    top: 17%;
+}
+}
+
+#game-icon6 {
+  width: 100px;
+  top: 28%;
+  left: 20%;
+  @include mq(sp) {
+    
+    
+}
+}
+
+#game-icon7 {
+  width: 100px;
+ 
+  @include mq(sp) {
+   
+    
+}
+}
+
+.coin {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  position: absolute;
+  top: 28%;
+  left: 27%;
+
+@include mq(tab) {
+  top: 29%;
+  left: 25%;
+}
+
+@include mq(sp) {
+  width: 40px;
+  top: 19.5%;
+  left: 25%;
+}
+}
+
+#game-icon8 {
+  width: 100px;
+  position: absolute;
+  top: 30%;
+  left: 70%;
+
+  
+
+@include mq(tab) {
+  top: 31.5%;
+}
+
+@include mq(sp) {
+  width: 40px;
+  top: 22%;
+  left: 70%;
+  
+}
+}
+
+#game-icon9 {
+  width: 130px;
+  position: absolute;
+  top: 24%;
+  left: -8%;
+
+ 
+
+@include mq(tab) {
+  left: -6%;
+}
+
+@include mq(sp) {
+  width: 80px;
+  top: 25%;
+}
+}
+
+#game-icon10 {
+  width: 200px;
+  position: absolute;
+  top: 90%;
+  left: 85%;
+
+
+@include mq(tab) {
+  left: 74%;
+}
+
+@include mq(sp) {
+  width: 100px;
+  top: 95%;
+  left: 75%;
+}
+}
+
+//top-mainのアニメーション
+.cv_btn img {
+  animation: anime1 0.5s ease 0s infinite alternate;
+  transform-origin:center;
+}
+@keyframes anime1 {
+  from {
+    transform: scale(0.9,0.9);
+  }
+  to {
+    transform: scale(1,1);
+  }
+}
+
+img:not(#not):hover {
+  transform: translateY(-5px);
+}
+
+
 #play-button {
   width: 280px;
   position: absolute;
@@ -454,6 +652,8 @@ height: auto;
   position: absolute;
   top: 45%;
   left: 60%;
+
+  
 
   @include mq(tab) {
     top: 70%;
@@ -619,6 +819,8 @@ main .main-section p img {
   }
 }
 
+
+
 #main-caption {
   display: flex;
   align-items: center;
@@ -659,17 +861,20 @@ main .main-section p img {
 // horizontal
 .area{
   overflow: hidden;
-  
+ 
 }
 
 .wrap{
   display: flex;
-  width: 100%;
+  // max-width: 100%;
 }
 .item{
   height: 100vh;
   display: flex;
   justify-content: center;
+  width: 100%;
+
+  
  
   @include mq(sp) {
     height: 80vh;
@@ -732,7 +937,18 @@ main .main-section p img {
   width: 300px;
   position: absolute;
   top: 0;
-  left: 700px;
+  left: 700px; 
+  animation: anime1 0.5s ease 0s infinite alternate;
+  transform-origin:center;
+  
+  @keyframes anime1 {
+    from {
+      transform: scale(0.9,0.9);
+    }
+    to {
+      transform: scale(1,1);
+    }
+  }
 
   @include mq(tab) {
    width: 200px; 
@@ -751,6 +967,17 @@ main .main-section p img {
   position: absolute;
   top: 200px;
   left: -100px;
+  animation: anime1 0.5s ease 0s infinite alternate;
+  transform-origin:center;
+  
+  @keyframes anime1 {
+    from {
+      transform: scale(0.9,0.9);
+    }
+    to {
+      transform: scale(1,1);
+    }
+  }
 
   @include mq(tab) {
    width: 200px;  

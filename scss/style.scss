@@ -14,8 +14,11 @@ $breakpoint: (
 // 	outline: 1px solid magenta;
 // }
 
+body {
+  background-color: #abe2ff;
+}
+
 .contents {
-    background-color: #abe2ff;
     width: 100%;
     height: auto;
     position: relative;
@@ -40,7 +43,7 @@ $breakpoint: (
 /*紙吹雪のスタイル*/
 .confetti {
     position: absolute;
-    max-width: 100vw;
+    width: 100%;
     height: 100%;
   }
   
@@ -283,7 +286,7 @@ $breakpoint: (
 
 
   /* wrapper */
-#wrapper {
+#wrapper:not(#horizontal) {
     width: 900px;
     margin: 0 auto;
 
@@ -433,16 +436,16 @@ height: auto;
 #game-icon5 {
   width: 130px;
   position: absolute;
-  top: 25%;
+  top: 50%;
   left: 70%;
 
   @include mq(tab) {
-    top: 27%;
+    top: 55%;
   }
 
   @include mq(sp) {
     width: 50px;
-    top: 17%;
+    top: 41%;
 }
 }
 
@@ -470,17 +473,17 @@ height: auto;
   justify-content: space-around;
   width: 100px;
   position: absolute;
-  top: 28%;
+  top: 55%;
   left: 27%;
 
 @include mq(tab) {
-  top: 29%;
+  top: 60%;
   left: 25%;
 }
 
 @include mq(sp) {
   width: 40px;
-  top: 19.5%;
+  top: 46%;
   left: 25%;
 }
 }
@@ -488,18 +491,18 @@ height: auto;
 #game-icon8 {
   width: 100px;
   position: absolute;
-  top: 30%;
+  top: 60%;
   left: 70%;
 
   
 
 @include mq(tab) {
-  top: 31.5%;
+  top: 65%;
 }
 
 @include mq(sp) {
   width: 40px;
-  top: 22%;
+  top: 52%;
   left: 70%;
   
 }
@@ -861,29 +864,8 @@ main .main-section p img {
   justify-content: flex-end;
 }
 
-// horizontal
-.area{
-  overflow: hidden;
- 
-}
+//horizontal
 
-.wrap{
-  display: flex;
-  // max-width: 100%;
-}
-.item{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-
-  
- 
-  @include mq(sp) {
-    height: 80vh;
-    margin-top: 4%;
-}
-}
 
 /* date */
 .date {

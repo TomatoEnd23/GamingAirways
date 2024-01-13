@@ -144,42 +144,7 @@ const mainHidden = window.addEventListener ("scroll",() => {
 
 
 //横スクロールに変更
-// コンテナ要素とスライド要素を取得
-const wrapper = document.querySelector(".js-wrapper");
-const slides = gsap.utils.toArray(".js-scroll");
-
-// コンテナの幅を取得
-const wrapperWidth = Element.offsetWidth;
-
-// 横スクロールアニメーションの設定
-window.addEventListener("load", function(){
-
-    //プラグインを定義
-    gsap.registerPlugin(ScrollTrigger);
-    
-    const area  = document.querySelector(".js-area");
-    const wrap  = document.querySelector(".js-wrap");
-    const items = document.querySelectorAll(".js-item");
-    const num   = items.length;
-    
-    gsap.set(wrap,  { width: num * 290 + "%" });
-    gsap.set(items, { width: 290 / num + "%" });
-    
-    gsap.to(items,{ 
-      xPercent: -100 * ( num - 1 ), //x方向に移動させる
-      ease: "none",
-      scrollTrigger: {
-        trigger: area, //トリガー
-        start: "0 0", //開始位置
-        end: "+=3000", //終了位置 スクロール量の調整
-        pin: true, //ピン留め
-        scrub: true, //スクロール量に応じて動かす
-      }
-    });
-    
-    });
 
 
-   
 
     

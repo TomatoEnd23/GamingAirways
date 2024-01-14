@@ -143,7 +143,7 @@ const mainHidden = window.addEventListener ("scroll",() => {
 });
 
 
-//横スクロールに変更
+
 
 
 

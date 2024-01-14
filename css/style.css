@@ -9,7 +9,7 @@ body {
   position: relative;
   background-image: url(../images/cloud1.svg), url(../images/cloud2.svg), url(../images/cloud3.svg), url(../images/cloud4.svg), url(../images/cloud3.svg), url(../images/cloud4.svg), url(../images/cloud5.svg), url(../images/cloud1.svg);
   background-size: 300px;
-  background-position: 20% 35%, 22% 17%, 80% 23%, 20% 26%, 80% 29%, 10% 93%, 85% 98%;
+  background-position: 20% 35%, 20% 55%, 10% 70%, 10% 85%, 80% 60%, 80% 50%, 85% 98%;
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 1279px) {
@@ -23,7 +23,7 @@ body {
   .contents {
     max-width: 100%;
     background-size: 150px;
-    background-position: 10% 27%, 80% 40%, 20% 50%, 80% 40%, 90% 22%, 97% 95%, 90% 75%, 10% 67%;
+    background-position: 10% 27%, 10% 46%, 10% 60%, 10% 75%, 90% 33%, 90% 41%, 90% 98%, 90% 52%;
   }
 }
 
@@ -973,6 +973,11 @@ main .main-section p img {
 }
 
 /* contact */
+label {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .contact {
   margin-bottom: 100px;
 }
@@ -1019,19 +1024,20 @@ main .main-section p img {
   }
 }
 
-.contact textarea {
+.contact article section form dl textarea {
   width: 340px;
   height: 250px;
   border-radius: 5px;
   border: 2px solid #000;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 767px) {
-  .contact textarea {
+  .contact article section form dl textarea {
     width: 294px;
   }
 }
 
-button {
+#contact-button {
   width: 200px;
   height: 40px;
   display: block;
@@ -1043,7 +1049,7 @@ button {
   font-weight: 500;
 }
 @media screen and (max-width: 767px) {
-  button {
+  #contact-button {
     margin: 30px auto;
   }
 }
